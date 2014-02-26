@@ -1,0 +1,23 @@
+<script src="command.js"></script>
+<script>
+function command_focus ()
+{
+  var commandline = document.getElementById("commandline");
+  commandline.focus();
+}
+</script>
+<body onload="command_focus();">
+
+<br/>
+<br/>
+<br/>
+
+<p id="response" align="left"></p>
+<form id="commandform" onSubmit="return command_go(this);">
+<nobr>
+<b style="font-size: 120%; font-family: monospace; font-weight: bold">></b>
+<input style="font-family: monospace; font-size: 120%; border: none" id="commandline" type="text" name="cmd" size="80">
+</nobr>
+</form>
+
+</body>
