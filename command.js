@@ -51,4 +51,5 @@ function command_run (cmd) {
   history = history + "<br>-----------------------------------<br>" ;
   document.getElementById("commandform").reset();
   document.getElementById("commandform").focus();
+  window.scroll(0,document.body.offsetHeight);
 }
